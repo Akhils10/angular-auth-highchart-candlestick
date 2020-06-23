@@ -1,4 +1,4 @@
-# angular-auth and highchart.js candlesctick charts
+# angular-auth and highchart.js candlestick charts
 
 ## Test email address and password
 
@@ -15,4 +15,4 @@ npm start
 
 ```
 
-Demo [Open demo app](https://netlify.com)
+Demo [Open demo app](https://angular-auth.netlify.app)
