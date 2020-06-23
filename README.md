@@ -26,4 +26,4 @@ npm start
 
 ```
     
-Demo [Open demo app](https://angular-auth.netlify.app)
+Demo [Open demo app](https://angular-auth-candlestick.netlify.app)
