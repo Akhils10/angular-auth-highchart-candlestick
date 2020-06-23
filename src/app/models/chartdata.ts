@@ -1,4 +1,4 @@
-const chartData = [
+export const chartData = [
   [
     "01-Jan-2020",
     12202.15,
@@ -1053,5 +1053,3 @@ const chartData = [
     35529.8
   ]
 ]
-
-export default chartData;

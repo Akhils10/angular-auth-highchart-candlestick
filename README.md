@@ -1,5 +1,16 @@
 # angular-auth and highchart.js candlestick charts
 
+### Features
+
+User Authentication 
+    - login
+    - logout
+    - login session persistence
+
+Charts
+    - Highcharts candlestick 
+    - Custom tooltip with OHLC, date and random value
+
 ## Test email address and password
 
 ```
@@ -14,5 +25,5 @@ npm install
 npm start
 
 ```
-
+    
 Demo [Open demo app](https://angular-auth.netlify.app)

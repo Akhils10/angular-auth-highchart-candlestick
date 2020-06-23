@@ -3,8 +3,7 @@ import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTT
 import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
 
-import { User } from '@app/models';
-import chartData from '@app/chartData';
+import { User, chartData } from '@app/models';
 
 const users: User[] = [
     { 
