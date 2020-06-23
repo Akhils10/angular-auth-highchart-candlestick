@@ -27,6 +27,7 @@ export class HomeComponent {
             this.users = users;
         });
         this.chartService.getAll().subscribe(data => {
+            
             // create the chart
             let charts = new Highcharts.stockChart({
                 chart: {
@@ -62,14 +63,14 @@ export class HomeComponent {
                     lineWidth: 2
                 }],
 
-                // tooltip: {
-                //     formatter: function() {
-                //         console.log(this.points[0])
-                //         return '<div><b>Open : </b><span>'+this.points[0].point.open+'</span></div><div><b>Close : </b><span>'+this.points[0].point.close+'</span></div><div><b>High : </b><span>'+this.points[0].point.high+'</span></div><div><b>Low : </b><span>'+this.points[0].point.low +'</span></div><div><b>Turnover : </b><span>  199</span></div>';
-                //     },
-                //     valueDecimals: 2,
-                //     useHTML: true
-                // },
+                tooltip: {
+                    split: true,
+                    formatter: function() {
+                        return '<div><b>Open : </b><span>'+this.points[0].point.open+'</span></div><div><b>Close : </b><span>'+this.points[0].point.close+'</span></div><div><b>High : </b><span>'+this.points[0].point.high+'</span></div><div><b>Low : </b><span>'+this.points[0].point.low +'</span></div><div><b>Turnover : </b><span>  '+ this.points[0].point.y +'</span></div><div style="background-color: #007bff; padding: 3px; color: #fff; text-align: center"><br><b>'+this.points[0].key+'<b></div>';
+                    },
+                    valueDecimals: 2,
+                    useHTML: true
+                },
         
                 series: [{
                     name: 'AAPL',
