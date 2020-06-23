@@ -1,6 +1,5 @@
 ﻿import { Component } from '@angular/core';
 import { first } from 'rxjs/operators';
-import chartdata from '@app/chartData';
 import { User } from '@app/models';
 import { UserService, ChartService } from '@app/services';
 
